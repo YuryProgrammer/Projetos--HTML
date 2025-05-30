@@ -1,11 +1,123 @@
+* {
+    box-sizing: border-box;
+}
 body {
     background-color: black;
     font-family: sans-serif;
     display: flex;
-    flex-direction: row;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
+
 h1 {
     color: white;
     font-size: 50px;
+}
+
+.flex-card {
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    gap: 10px;
+}
+
+.card_login {
+    background-color: black;
+    width: 350px;
+    padding: 20px; 
+    gap: 15px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.texto, .senha, .botão {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.texto, .senha {
+    background-color: #262626;
+    color: white;
+    border: 1px solid #333;
+}
+
+.botão {
+    background-color: #3897f0;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.linha-ou {
+    display: flex;
+    align-items: center;
+    color: #797878;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+}
+
+.linha-ou::before,
+.linha-ou::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background-color: #333;
+    margin: 0 10px; 
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.facebook-login a {
+    color: #3897f0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.imagem_facebook {
+    vertical-align: middle;
+}
+
+.link_facebook {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    margin: 5px;
+    display: inline-block;
+}
+
+.cadastre-se {
+    color: white;
+    font-size: 15px;
+    padding: 30px;
+}
+.cadastre-se a {
+    color: #3897f0;
+    text-decoration: none;
+}
+.lado_esquerdo {
+    display: none;
+}
+@media (min-width: 768px) {
+    .lado_esquerdo {
+        display: block;
+        margin-right: 50px;
+    }
+}
+.lado_esquerdo img {
+    height: 600px;
+    width: auto;
+    object-fit: contain;
 }
