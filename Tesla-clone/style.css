@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+html, body{
+    height: 100%;
+}
+.center{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+section.main{
+    width: 100%;
+    min-height: 100%;
+    background-image: url('Tesla.jpg/Homepage-Promotional-Carousel-Model-Y-Desktop-US.avif');
+    background-position: center;
+    background-size: cover;
+}
+header{
+    display: flex ;
+    justify-content: space-around;
+}
+.logo{
+    position: relative;
+    top: -40px;
+}
+.logo img{
+    width: 130px;
+}
+.menu{
+    margin-top: 15px;
+}
+.menu a{
+    display: inline-block;
+    margin: 0 10px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s all;
+    padding: 2px;
+}
+.menu a:hover{
+background-color: rgba(200, 200, 200, 0.4);
+}
+.title{
+    text-align: center;
+}
+.title h1{
+    color: white;
+    font-size: 60px;
+    letter-spacing: 1.2px;
+}
+.title p a{
+    color: white;
+    letter-spacing: 1.2px;
+}
+.btn{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.btn a{
+    display: inline-block;
+    padding: 8px 30px;
+    background-color: #3e6ae1;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    margin: 0;
+    min-width: 160px;
+    text-align: center;
+}
